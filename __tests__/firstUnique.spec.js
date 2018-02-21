@@ -10,8 +10,9 @@ describe("Is input a string?", () => {
 
 describe("Is the answer only one letter?", () => {
 	test("Should see only one letter generated", () => {
-		const result = firstUnique("aaabbbcccdeeefff");
+		const result = firstUnique("sssssnnnnnnaaaaakeeeeeesssss");
 		expect(result).toHaveLength(1);
+		console.log(result);
 	});
 });
 
