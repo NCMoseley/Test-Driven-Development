@@ -10,9 +10,10 @@ describe("Is input a string?", () => {
 
 describe("Is the answer only one letter?", () => {
 	test("Should see only one letter generated", () => {
-		const result = firstUnique("sssssnnnnnnaaaaakeeeeeesssss");
+		// const result = firstUnique("sssssnnnnnnaaaaakeeeeeesssss");
+		const result = firstUnique("frof");
 		expect(result).toHaveLength(1);
-		console.log(result);
+		// console.log(result);
 	});
 });
 
@@ -21,5 +22,13 @@ describe("Is the string all the same letter?", () => {
 		const result = firstUnique("hhhhhhh");
 		// const result = firstUnique("sssssnnnnnnaaaaakeeeeeesssss");
 		expect(result).toBe(undefined);
+	});
+});
+
+describe("Are there more than 1 unique letters?", () => {
+	test("Should return true", () => {
+		const result = firstUnique("ttthjjjf");
+		expect(result).toBeTruthy();
+		// console.log(result);
 	});
 });
